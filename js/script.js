@@ -18,6 +18,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Demo Modal functionality
+  const demoModal = document.getElementById('demoModal');
+  const watchDemoBtn = document.getElementById('watchDemoBtn');
+  const modalClose = document.querySelector('.demo-modal-close');
+  const modalOverlay = document.querySelector('.demo-modal-overlay');
+
+  const openModal = () => {
+    demoModal?.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    demoModal?.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  watchDemoBtn?.addEventListener('click', openModal);
+  modalClose?.addEventListener('click', closeModal);
+  modalOverlay?.addEventListener('click', closeModal);
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && demoModal?.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
