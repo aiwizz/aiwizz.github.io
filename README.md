@@ -254,9 +254,4 @@ This landing page is part of the Recap Dat project. See parent directory LICENSE
 ## 📧 Contact
 
 For questions or support:
-- Email: support@recapdat.com
-- GitHub Issues: [https://github.com/yourusername/summizethat/issues](https://github.com/yourusername/summizethat/issues)
-
----
-
-Built with ❤️ by the Recap Dat Team
+- Email: info@atom8.info
