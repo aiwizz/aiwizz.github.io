@@ -1,0 +1,16 @@
+# robots.txt for Recap Dat
+# https://recapdat.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://recapdat.com/sitemap.xml
+
+# Crawl-delay (optional, be polite to servers)
+Crawl-delay: 1
+
+# Block access to any admin or private directories (if any exist in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
