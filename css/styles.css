@@ -455,6 +455,38 @@ body {
   opacity: 1;
 }
 
+.browser-icon.coming-soon {
+  cursor: default;
+  opacity: 0.4;
+  position: relative;
+}
+
+.browser-icon.coming-soon:hover {
+  opacity: 0.5;
+}
+
+.browser-icon.coming-soon::after {
+  content: 'Coming Soon';
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-primary, #1a1a2e);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.browser-icon.coming-soon:hover::after {
+  opacity: 1;
+}
+
 .browser-icon img {
   width: 48px;
   height: 48px;
