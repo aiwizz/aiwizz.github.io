@@ -52,6 +52,7 @@
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/blog.css">
   
   <!-- Structured Data - Organization -->
   <script type="application/ld+json">
@@ -80,30 +81,45 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Recap Dat",
-    "description": "AI-powered browser extension that summarizes articles and web pages instantly",
+    "description": "AI-powered browser extension that summarizes articles and web pages instantly. Save hours reading with one-click AI summaries of any web page, article, or research paper.",
     "applicationCategory": "BrowserApplication",
+    "applicationSubCategory": "Productivity",
     "operatingSystem": "Chrome, Firefox, Edge, Safari",
+    "url": "https://recapdat.com",
+    "downloadUrl": "https://chromewebstore.google.com/detail/recap-dat/mgacejkfimphkaiocoacchnfnngnnfle",
+    "installUrl": "https://chromewebstore.google.com/detail/recap-dat/mgacejkfimphkaiocoacchnfnngnnfle",
+    "softwareVersion": "1.0",
+    "datePublished": "2025-12-01",
+    "screenshot": "https://recapdat.com/images/og-image.png",
+    "author": {
+      "@type": "Organization",
+      "name": "Atom8",
+      "url": "https://atom8.info"
+    },
     "offers": [
       {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
         "name": "Free Plan",
-        "description": "5 summaries per day"
+        "description": "5 summaries per day",
+        "availability": "https://schema.org/InStock"
       },
       {
         "@type": "Offer",
         "price": "5.99",
         "priceCurrency": "USD",
         "name": "Premium Monthly",
-        "description": "Unlimited summaries"
+        "description": "Unlimited summaries with PDF export and priority processing",
+        "availability": "https://schema.org/InStock"
       },
       {
         "@type": "Offer",
         "price": "60",
         "priceCurrency": "USD",
         "name": "Premium Yearly",
-        "description": "Unlimited summaries, save 17%"
+        "description": "Unlimited summaries, save 17% compared to monthly",
+        "availability": "https://schema.org/InStock"
       }
     ],
     "aggregateRating": {
@@ -118,8 +134,12 @@
       "Multiple summary styles (bullets, paragraph, insights)",
       "Customizable summary length",
       "PDF export",
-      "Cross-browser support"
-    ]
+      "Cross-browser support (Chrome, Firefox, Edge, Safari)",
+      "Privacy-first design",
+      "One-click copy to clipboard"
+    ],
+    "permissions": "activeTab",
+    "browserRequirements": "Requires Chrome 88+, Firefox 78+, Edge 88+, or Safari 14+"
   }
   </script>
   
@@ -183,6 +203,7 @@
           <a href="#features" role="menuitem">Features</a>
           <a href="#how-it-works" role="menuitem">How It Works</a>
           <a href="#pricing" role="menuitem">Pricing</a>
+          <a href="/blog/" role="menuitem">Blog</a>
           <a href="#download" class="btn-primary" role="menuitem">Get Started Free</a>
         </div>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
@@ -477,6 +498,54 @@
     </div>
   </section>
 
+  <!-- Blog Preview Section -->
+  <section id="blog" class="blog-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">From Our Blog</span>
+        <h2>Tips & Insights on <span class="gradient-text">AI-Powered Reading</span></h2>
+      </div>
+      <div class="blog-preview-grid">
+        <a href="/blog/best-free-article-summarizer-extension-2026.html" class="blog-preview-card">
+          <div class="blog-preview-card-content">
+            <div class="post-meta">
+              <span class="post-category">Comparison</span>
+              <span class="post-read-time">12 min read</span>
+            </div>
+            <h3>Best Free Article Summarizer Extensions in 2026</h3>
+            <p>We tested every major AI summarizer extension side-by-side. Here are the top picks for speed, accuracy, and value.</p>
+            <span class="read-more">Read More &rarr;</span>
+          </div>
+        </a>
+        <a href="/blog/how-to-summarize-web-pages-with-ai.html" class="blog-preview-card">
+          <div class="blog-preview-card-content">
+            <div class="post-meta">
+              <span class="post-category">Tutorial</span>
+              <span class="post-read-time">10 min read</span>
+            </div>
+            <h3>How to Summarize Web Pages with AI</h3>
+            <p>A step-by-step tutorial on using AI tools to instantly summarize any web page, article, or research paper.</p>
+            <span class="read-more">Read More &rarr;</span>
+          </div>
+        </a>
+        <a href="/blog/ai-tools-for-students-to-read-faster.html" class="blog-preview-card">
+          <div class="blog-preview-card-content">
+            <div class="post-meta">
+              <span class="post-category">Education</span>
+              <span class="post-read-time">11 min read</span>
+            </div>
+            <h3>AI Tools for Students to Read Faster</h3>
+            <p>Discover the best AI reading tools that help students process textbooks, papers, and articles in half the time.</p>
+            <span class="read-more">Read More &rarr;</span>
+          </div>
+        </a>
+      </div>
+      <div class="view-all">
+        <a href="/blog/">View All Articles &rarr;</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Download Section -->
   <section id="download" class="download">
     <div class="container">
@@ -547,7 +616,8 @@
           <a href="#download">Download</a>
         </div>
         <div class="footer-section">
-          <h4>Info</h4>
+          <h4>Resources</h4>
+          <a href="/blog/">Blog</a>
           <a href="mailto:info@atom8.info">Contact Us</a>
           <a href="faq.html">FAQ</a>
         </div>
